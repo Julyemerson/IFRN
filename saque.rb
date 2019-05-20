@@ -19,7 +19,7 @@ loop do
                 total_ced += 1
             else
                 if total_ced > 0
-                    puts " O total de #{total_ced}, cedulas de R$#{ced}"
+                    puts " O total de #{total_ced}, cedulas de R$ #{ced}"
                 end
                 if ced == 100
                     ced = 50
@@ -28,7 +28,9 @@ loop do
                 elsif ced == 20
                     ced = 10
                 elsif ced == 10
-                    ced = 1
+                    ced = 5
+                elsif ced == 5
+                    ced = 2
                 end
                 total_ced = 0 
                 break if total == 0 
@@ -36,9 +38,4 @@ loop do
         end 
     end
     break if opcao == 0     
-end   
-
-
-
-
-    
+end     
